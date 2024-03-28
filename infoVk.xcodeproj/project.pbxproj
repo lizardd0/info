@@ -14,6 +14,10 @@
 		DF390FF62BB5AD7B00477526 /* infoVkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF390FF52BB5AD7B00477526 /* infoVkTests.swift */; };
 		DF3910002BB5AD7B00477526 /* infoVkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF390FFF2BB5AD7B00477526 /* infoVkUITests.swift */; };
 		DF3910022BB5AD7B00477526 /* infoVkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3910012BB5AD7B00477526 /* infoVkUITestsLaunchTests.swift */; };
+		DF3910102BB5B10F00477526 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF39100F2BB5B10F00477526 /* ServiceModel.swift */; };
+		DF3910122BB5B1C000477526 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3910112BB5B1C000477526 /* ServiceManager.swift */; };
+		DF3910142BB5B47900477526 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3910132BB5B47900477526 /* LoadingView.swift */; };
+		DF3910162BB5B4E100477526 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3910152BB5B4E100477526 /* ServicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		DF390FFB2BB5AD7B00477526 /* infoVkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infoVkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF390FFF2BB5AD7B00477526 /* infoVkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoVkUITests.swift; sourceTree = "<group>"; };
 		DF3910012BB5AD7B00477526 /* infoVkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoVkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF39100F2BB5B10F00477526 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		DF3910112BB5B1C000477526 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		DF3910132BB5B47900477526 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DF3910152BB5B4E100477526 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		DF390FE32BB5AD7A00477526 /* infoVk */ = {
 			isa = PBXGroup;
 			children = (
+				DF3910172BB5B62300477526 /* Views */,
+				DF39100E2BB5B0EB00477526 /* Model */,
 				DF390FE42BB5AD7A00477526 /* infoVkApp.swift */,
-				DF390FE62BB5AD7A00477526 /* ContentView.swift */,
 				DF390FE82BB5AD7B00477526 /* Assets.xcassets */,
 				DF390FEA2BB5AD7B00477526 /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				DF3910012BB5AD7B00477526 /* infoVkUITestsLaunchTests.swift */,
 			);
 			path = infoVkUITests;
+			sourceTree = "<group>";
+		};
+		DF39100E2BB5B0EB00477526 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF39100F2BB5B10F00477526 /* ServiceModel.swift */,
+				DF3910112BB5B1C000477526 /* ServiceManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF3910172BB5B62300477526 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF390FE62BB5AD7A00477526 /* ContentView.swift */,
+				DF3910132BB5B47900477526 /* LoadingView.swift */,
+				DF3910152BB5B4E100477526 /* ServicesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF390FE72BB5AD7A00477526 /* ContentView.swift in Sources */,
+				DF3910102BB5B10F00477526 /* ServiceModel.swift in Sources */,
+				DF3910162BB5B4E100477526 /* ServicesView.swift in Sources */,
 				DF390FE52BB5AD7A00477526 /* infoVkApp.swift in Sources */,
+				DF3910142BB5B47900477526 /* LoadingView.swift in Sources */,
+				DF3910122BB5B1C000477526 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
