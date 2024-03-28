@@ -13,6 +13,7 @@ struct ServicesView: View {
         NavigationStack {
             List {
                 ForEach(services, id: \.self) { service in
+                    
                     Link(destination: URL(string: service.link)!, label: {
                         ServiceRowView(service: service)
                     })
@@ -47,15 +48,3 @@ struct ServiceRowView: View {
     }
 }
 
-//func destinationLink(_ url: String) -> String {
-//
-//}
-
-//struct ServiceView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        ServicesView(services: )
-//    }
-//}
-//#Preview {
-//    ServicesView()
-//}
